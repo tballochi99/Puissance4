@@ -33,7 +33,7 @@ Un jeu de Puissance 4 développé en JavaScript vanilla, HTML5 et CSS3.
 
 1. **Cloner le projet :**
    ```bash
-   git clone https://github.com/yourusername/Connect4.git
+   git clone https://github.com/tballochi99/Connect4.git
    ```
 
 2. **Lancer le jeu :**
