@@ -1,0 +1,197 @@
+body {
+    background-color: #202023;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    margin: auto;
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.score {
+    position: absolute;
+    left: 70%;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    width: 120px;
+}
+
+#game {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+td {
+    background-color: #202023;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.player1 {
+    background-color: #bf0013;
+}
+
+.player1:hover {
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(2px, 0, 0);
+    }
+}
+
+
+.player2 {
+    background-color: #f9e479;
+}
+
+.player2:hover {
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+.btn-reset {
+    display: flex;
+    margin: auto;
+    margin-top: 4%;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    font-weight: bolder;
+    width: 50px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-reset:hover {
+    background-color: #202023;
+    color: white;
+    transition: 0.2s;
+    width: 100px;
+    letter-spacing: 5px;
+    border: 1px solid #f2f2f2;
+}
+
+.text {
+    color: white;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* bp */
+
+
+@media (max-width: 391px) {
+    .score {
+        top: 80%;
+        left: 39%;
+    }
+
+    td {
+        background-color: #202023;
+        width: 20px;
+        height: 30px;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 576px) {
+
+    /* Styles pour les écrans extra-petits (moins de 576px de large) */
+    .score {
+        top: 90%;
+    }
+
+    td {
+        background-color: #202023;
+        width: 40px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 800px) {
+
+    /* Styles pour les écrans petits (576px à 767.98px de large) */
+    .score {
+        top: 50%;
+    }
+
+    td {
+        background-color: #202023;
+        width: 50px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 991.98px) {
+
+    /* Styles pour les écrans moyens (768px à 991.98px de large) */
+    .score {
+        left: 90%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* Styles pour les écrans grands (992px à 1199.98px de large) */
+    .score {
+        left: 95%;
+        transform: translateX(-80%);
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* Styles pour les écrans extra-grands (1200px et plus de large) */
+    .score {
+        left: 90%;
+        transform: translateX(-90%);
+        padding: 60px;
+    }
+}
