@@ -1,46 +1,41 @@
-# W-JSC-501-MAR-1-1-puissance4-timote.ballochi
+# Connect 4
 
-CLASS GRILLE
+Un jeu de Puissance 4 développé en JavaScript vanilla, HTML5 et CSS3.
 
-- créer une grille 6x7
+## Description du Projet
 
-- tableau multidimensionnel
+**Connect 4** est une reproduction du célèbre jeu de Puissance 4 en version web. Le jeu permet à deux joueurs de s'affronter en plaçant des jetons dans une grille, le but étant d'aligner 4 jetons de sa couleur horizontalement, verticalement ou en diagonale.
 
-- 6 éléments -> une rangée
-- 7 éléments -> une colone
+## Fonctionnalités
 
-- afficher la grille
+- Interface de jeu interactive
+- Système de tour par tour
+- Détection automatique des victoires
+- Compteur de score
+- Design responsive
+- Possibilité de recommencer une partie
 
-///////
+## Compétences Développées
 
-Class Grid 
-    Table(Pions)
- -> Pion 6x7
-Class Pions
-    Status (Pion deja présent mais pas visible)
-            0 -> vide (Grid vide)
-            1 -> J1
-            2 -> J2
-Class Playeur
-    avatar
-    color
-    Name
-MaGrille = new Grille();
-constructor(x=6, y=7) {
-    int Table
-    for(i=0, i++)
-        for(i=0, i++)
-}
-private Status;
-constructor()
-Status=0;
-     -> Jouons
-Jouer
-     -> Grille -> Pion
+- Déploiement d'un environnement de travail avec Git
+- Identification et développement des fonctionnalités clés
+- Développement du prototype de jeu
+- Intégration des éléments graphiques
+- Implémentation de l'interface utilisateur
 
+## Technologies Utilisées
 
+- JavaScript (Logique du jeu)
+- HTML5 (Structure)
+- CSS3 (Style et animations)
 
-- id -> div
+## Installation
 
-- css
+1. **Cloner le projet :**
+   ```bash
+   git clone https://github.com/yourusername/Connect4.git
+   ```
 
+2. **Lancer le jeu :**
+   - Ouvrir le fichier `index.html` dans un navigateur web
+   - Ou utiliser un serveur local comme Live Server
